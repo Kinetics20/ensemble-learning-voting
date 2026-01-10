@@ -1,0 +1,14 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+/datasets/bank_data.csv
+/datasets/bank_data_processed.csv
+/datasets/bank_data_processing_2.csv
+/datasets/concrete_data.csv
