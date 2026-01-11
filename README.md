@@ -1,8 +1,20 @@
-# 🧠 Ensemble Learning – Voting Classifier
+# 🧠 Ensemble Learning with scikit-learn
 
-This project is part of my **Data Science** course, where I experiment with combining multiple models to improve predictive performance using the `VotingClassifier`.
-This experiment demonstrates **ensemble learning** using a **hard voting strategy** with multiple classical machine learning models.  
-The goal is to compare individual model performance with the ensemble result.
+This repository contains **practical experiments with ensemble learning methods** implemented as part of my **Data Science course**.  
+The focus is on understanding how different ensemble techniques improve model performance, stability, and generalization when compared to single estimators.
+
+The project evolves over time and includes experiments with **both regression and classification ensembles**.
+
+---
+
+## 📂 Covered Methods
+
+- ✅ **Voting Classifier** (hard voting)
+- ✅ **Bagging & Pasting – Regression**
+- ✅ **Bagging & Pasting – Classification**
+- 🔜 Further ensemble methods (e.g. boosting, stacking)
+
+Each experiment is documented in a separate Jupyter Notebook.
 
 ---
 
@@ -64,22 +76,44 @@ SVC 0.7395833333333334
 VotingClassifier 0.8333333333333334
 
 ```
+---
+
+## 📊 Example Results
+
+### 🧩 Bagging & Pasting – Regression
+
+**Best hyperparameters (GridSearchCV):**
+```bash
+{
+  'estimator__max_depth': 12,
+  'estimator__min_samples_leaf': 1,
+  'estimator__min_samples_split': 2,
+  'max_samples': 0.8,
+  'n_estimators': 300
+}
+
+R² score: 0.9145
+```
+
 
 ---
 
-## 🧪 Conclusions
+## 🧪 Key Observations
 
-* ✅ **VotingClassifier** achieved the **same accuracy as the best individual model**
-* ⚖️ Ensemble improves **stability** and reduces model variance
-* 📌 Hard voting works well when base models are **diverse**
+- ⚖️ **Ensemble methods** often match or outperform the best single model
+- 📉 **Bagging** reduces variance, especially for high-variance models
+- 🧠 **Voting** benefits from model diversity
+- 📌 Performance gains depend on both **model choice** and **data characteristics**
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **scikit-learn**
-* **NumPy / Pandas**
-* **Matplotlib / Seaborn**
-* **Python**
+- **Python**
+- **scikit-learn**
+- **NumPy / Pandas**
+- **Matplotlib / Seaborn**
+- **SciPy**
+
 
 👤 **Piotr Lipiński** 🗓️ *Finished: January 2026* 📫 *Contributions welcome!*
