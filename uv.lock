@@ -361,7 +361,7 @@ wheels = [
 ]
 
 [[package]]
-name = "ensamble-learning"
+name = "ensemble-learning"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

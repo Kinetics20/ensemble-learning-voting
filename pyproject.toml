@@ -1,7 +1,9 @@
 [project]
-name = "ensamble-learning"
+name = "ensemble-learning"
 version = "0.1.0"
-description = "Add your description here"
+description = "Experiments with machine learning models and ensemble methods using scikit-learn."
+authors = ["Piotr Lipinski <kinetics20@gmail.com>"]
+license = "Beerware"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
