@@ -5,10 +5,14 @@ build/
 dist/
 wheels/
 *.egg-info
+.vscode
+**/**.pyc
 
 # Virtual environments
 .venv
+venv
 /datasets/bank_data.csv
 /datasets/bank_data_processed.csv
 /datasets/bank_data_processing_2.csv
 /datasets/concrete_data.csv
+.idea/
