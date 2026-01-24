@@ -16,3 +16,4 @@ venv
 /datasets/bank_data_processing_2.csv
 /datasets/concrete_data.csv
 .idea/
+/datasets/adult.parquet
