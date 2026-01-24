@@ -1,7 +1,9 @@
 # 🧠 Ensemble Learning with scikit-learn
 
-This repository contains **practical experiments with ensemble learning methods** implemented as part of my **Data Science course**.  
-The focus is on understanding how different ensemble techniques improve model performance, stability, and generalization when compared to single estimators.
+This repository contains **practical experiments with ensemble learning methods** implemented as part of my **Data
+Science course**.  
+The focus is on understanding how different ensemble techniques improve model performance, stability, and generalization
+when compared to single estimators.
 
 The project evolves over time and includes experiments with **both regression and classification ensembles**.
 
@@ -9,12 +11,27 @@ The project evolves over time and includes experiments with **both regression an
 
 ## 📂 Covered Methods
 
-- ✅ **Voting Classifier** (hard voting)
-- ✅ **Bagging & Pasting – Regression**
-- ✅ **Bagging & Pasting – Classification**
-- 🔜 Further ensemble methods (e.g. boosting, stacking)
+- ✅ **Synthetic Data Generation**
+    - Regression data generated using `drawdata` and `ScatterWidget`
+    - Visual exploration of non-linear patterns and noise
 
-Each experiment is documented in a separate Jupyter Notebook.
+- ✅ **Decision Trees**
+    - Single Decision Tree regression
+    - Analysis of underfitting and overfitting behavior
+
+- ✅ **Random Forest**
+    - Comparison between a single tree and an ensemble of trees
+    - Variance reduction through averaging multiple estimators
+
+- ✅ **Bagging & Pasting**
+    - Regression
+    - Classification
+    - Hyperparameter tuning with GridSearchCV
+
+- ✅ **Boosting**
+    - AdaBoost (conceptual introduction)
+    - Gradient Boosting for regression
+
 
 ---
 
@@ -22,8 +39,7 @@ Each experiment is documented in a separate Jupyter Notebook.
 
 ```mermaid
 graph TD
-
-VC["VotingClassifier
+    VC["VotingClassifier
 ---
 voting: hard
 weights: None"]
@@ -76,6 +92,7 @@ SVC 0.7395833333333334
 VotingClassifier 0.8333333333333334
 
 ```
+
 ---
 
 ## 📊 Example Results
@@ -83,6 +100,7 @@ VotingClassifier 0.8333333333333334
 ### 🧩 Bagging & Pasting – Regression
 
 **Best hyperparameters (GridSearchCV):**
+
 ```bash
 {
   'estimator__max_depth': 12,
@@ -95,6 +113,22 @@ VotingClassifier 0.8333333333333334
 R² score: 0.9145
 ```
 
+## 📊 Gradient Boosting – Regression
+
+The figure below illustrates the effect of **Gradient Boosting Regression** on a non-linear synthetic dataset.
+
+![GradientBoostingRegression](datasets/gradint_boosting_regression.png)
+
+**Description:**
+
+- Each subplot shows predictions for an increasing number of trees (`n_estimators`)
+- With more trees, the model:
+    - gradually captures complex non-linear patterns
+    - reduces bias compared to a single decision tree
+- The ensemble builds the final model **sequentially**, correcting errors made by previous trees
+
+This experiment demonstrates how Gradient Boosting transitions from **underfitting to a well-generalized model** as the
+ensemble grows.
 
 ---
 
@@ -114,6 +148,5 @@ R² score: 0.9145
 - **NumPy / Pandas**
 - **Matplotlib / Seaborn**
 - **SciPy**
-
 
 👤 **Piotr Lipiński** 🗓️ *Finished: January 2026* 📫 *Contributions welcome!*
