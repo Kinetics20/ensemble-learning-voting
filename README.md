@@ -37,6 +37,24 @@ The project evolves over time and includes experiments with **both regression an
     - XGBClassifier for binary classification
     - Evaluation using Accuracy and F1-score
 
+- ✅ **Random Forest Regression**
+    - `RandomForestRegressor` for non-linear regression tasks
+    - Comparison with single `DecisionTreeRegressor`
+    - Reduction of variance through averaging multiple trees
+    - Analysis of overfitting control via:
+        - `max_depth`
+        - `min_samples_leaf`
+        - `n_estimators`
+    - Feature importance analysis
+
+- ✅ **Stacking (Stacked Generalization)**
+    - `StackingClassifier` for classification
+    - Combination of multiple base models (e.g. Logistic Regression, Random Forest, Gradient Boosting)
+    - Meta-model learning from base learners' predictions
+    - Cross-validation based out-of-fold predictions
+    - Performance comparison with individual models
+    - Evaluation using Accuracy and F1-score
+
 ---
 
 ## 🏗️ Model Architecture
