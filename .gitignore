@@ -17,3 +17,4 @@ venv
 /datasets/concrete_data.csv
 .idea/
 /datasets/adult.parquet
+/datasets/uci_bank_data.csv
