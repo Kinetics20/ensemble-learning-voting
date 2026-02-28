@@ -55,6 +55,25 @@ The project evolves over time and includes experiments with **both regression an
     - Performance comparison with individual models
     - Evaluation using Accuracy and F1-score
 
+- ✅ **Voting (Hard & Soft Voting)**
+    - `VotingClassifier` for classification
+    - Hard voting (majority rule)
+    - Soft voting (averaged predicted probabilities)
+    - Combination of heterogeneous models (e.g. Logistic Regression, SVM, Random Forest)
+    - Comparison between Hard vs Soft voting performance
+    - Evaluation using Accuracy and F1-score
+
+- ✅ **Model Evaluation & Comparison**
+    - Cross-validation using `cross_val_score`
+    - Train / validation / holdout split strategy
+    - Performance comparison across multiple ensemble methods
+    - Bias–variance tradeoff analysis in ensemble models
+
+- ✅ **Feature Importance & Model Interpretation**
+    - Feature importance from tree-based models
+    - Comparison of importance across Random Forest, Gradient Boosting and XGBoost
+    - Interpretation of model behavior on non-linear datasets
+
 ---
 
 ## 🏗️ Model Architecture
