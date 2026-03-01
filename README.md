@@ -26,16 +26,45 @@ The project evolves over time and includes experiments with **both regression an
 - ✅ **Bagging & Pasting**
     - Regression
     - Classification
-    - Hyperparameter tuning with GridSearchCV
+    - Hyperparameter tuning with `GridSearchCV`
 
 - ✅ **Boosting**
     - AdaBoost (conceptual introduction)
     - Gradient Boosting for regression
 
 - ✅ **XGBoost**
-    - XGBRegressor for non-linear regression
-    - XGBClassifier for binary classification
+    - `XGBRegressor` for non-linear regression
+    - `XGBClassifier` for binary classification
     - Evaluation using Accuracy and F1-score
+
+- ✅ **LightGBM**
+    - `LGBMClassifier` for classification tasks
+    - Histogram-based gradient boosting
+    - Efficient handling of large datasets
+    - Regularization parameters:
+        - `num_leaves`
+        - `max_depth`
+        - `learning_rate`
+        - `n_estimators`
+    - Evaluation using Accuracy and F1-score
+
+- ✅ **CatBoost**
+    - `CatBoostRegressor` for regression
+    - Ordered boosting technique
+    - Robustness to overfitting
+    - Built-in handling of categorical features
+    - Hyperparameters:
+        - `depth`
+        - `learning_rate`
+        - `iterations`
+    - Performance evaluation on non-linear datasets
+
+- ✅ **Hyperparameter Tuning**
+    - `GridSearchCV`
+    - `RandomizedSearchCV`
+    - Cross-validation strategy
+    - Model selection based on validation performance
+    - Comparison of tuned vs default models
 
 - ✅ **Random Forest Regression**
     - `RandomForestRegressor` for non-linear regression tasks
@@ -71,7 +100,7 @@ The project evolves over time and includes experiments with **both regression an
 
 - ✅ **Feature Importance & Model Interpretation**
     - Feature importance from tree-based models
-    - Comparison of importance across Random Forest, Gradient Boosting and XGBoost
+    - Comparison of importance across Random Forest, Gradient Boosting, XGBoost, LightGBM and CatBoost
     - Interpretation of model behavior on non-linear datasets
 
 ---
